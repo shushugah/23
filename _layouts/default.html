@@ -20,34 +20,6 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="off-canvas">
-      <figure class="avatar">
-        <img src="{{ site.baseurl }}/assets/img/avatar.jpg" alt="Picture" title="That's me, {{ site.author }}.">
-      </figure>
-      <div class="bio">
-          <h1>Hi, I'm {{ site.author }}.</h1>
-          <p>{{ site.author-bio }}</p>
-      </div>
-      <nav>
-        <h6>Follow me on</h6>
-        <ul>
-          {% if site.twitter %}
-          <li><a target="_blank" href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
-          {% endif %}
-          {% if site.github %}
-          <li><a target="_blank" href="https://github.com/{{ site.github }}">Github</a></li>
-          {% endif %}
-          {% if site.dribbble %}
-          <li><a target="_blank" href="https://dribbble.com/{{ site.dribbble }}">Dribbble</a></li>
-          {% endif %}
-          {% if site.instagram %}
-          <li><a target="_blank" href="https://instagram.com/{{ site.instagram }}">Instagram</a></li>
-          {% endif %}
-        </ul>
-      </nav>
-    </div>
-
-
     <div class="site-wrapper">
 
       <header>
@@ -56,6 +28,26 @@
           <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
         </div>
       </header>
+      <div class="off-canvas ">
+        <div class=oc-content>
+          <nav>
+            <h6>Site pages</h6>
+            <ul>
+              <li><a target="_blank" href="/about">About</a></li>
+              <li><a target="_blank" href="/search">Search</a></li>
+            </ul>
+            <h6>Social media</h6>
+            <ul>
+              {% if site.twitter %}
+              <li><a target="_blank" href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
+              {% endif %}
+              {% if site.soundcloud %}
+              <li><a target="_blank" href="https://soundcloud.com/{{ site.soundcloud }}">SoundCloud</a></li>
+              {% endif %}
+            </ul>
+          </nav>
+        </div>
+      </div>
 
       <main>
         {{ content }}
