@@ -4,4 +4,5 @@ gem 'jekyll', '~> 3.8'
 
 group :jekyll_plugins do
   gem 'jekyll-paginate', '~> 1.1'
+  gem 'jekyll-sound_cloud', '~> 0.1.0'
 end
