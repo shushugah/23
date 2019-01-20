@@ -11,6 +11,8 @@ GEM
     eventmachine (1.2.7)
     ffi (1.9.25)
     forwardable-extended (2.6.0)
+    hash-joiner (0.0.7)
+      safe_yaml
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -34,6 +36,7 @@ GEM
       jekyll (~> 3.6)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
+    json (2.1.0)
     kramdown (1.17.0)
     liquid (4.0.1)
     listen (3.1.5)
@@ -60,9 +63,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hash-joiner
   jekyll (~> 3.8)
   jekyll-paginate (~> 1.1)
   jekyll-sound_cloud (~> 0.1.0)
+  json
 
 BUNDLED WITH
    1.17.3

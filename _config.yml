@@ -24,7 +24,7 @@ soundcloud: 2Jews3Opinions
 # ga_tracking_id: UA-47727049-1
 
 # Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
-
+plugins_dir: ./_plugins
 markdown: kramdown
 permalink: pretty
 plugins:
@@ -33,6 +33,10 @@ plugins:
 
 paginate: 10
 paginate_path: "/page/:num"
+jekyll_get:
+  - data: github
+    json: 'https://api.github.com/users/shushugah/repos'
+    cache: false
 
 # SCSS
 
