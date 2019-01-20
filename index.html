@@ -1,44 +1,105 @@
----
-layout: default
-title: Homepage
----
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>2 Jews, 3 Opinions - Fluid, responsive blog theme for Jekyll</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="Fluid, responsive blog theme for Jekyll">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
 
-<div id="home">
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="site-wrapper">
+
+      <header>
+        <div class="h-wrap">
+          <h1 class="title"><a href="/" title="Back to Homepage">2 Jews, 3 Opinions</a></h1>
+          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+        </div>
+      </header>
+      <div class="off-canvas ">
+        <div class=oc-content>
+          <nav>
+            <h6>Site pages</h6>
+            <ul>
+              <li><a target="_blank" href="/about">About</a></li>
+              <li><a target="_blank" href="/search">Search</a></li>
+            </ul>
+            <h6>Social media</h6>
+            <ul>
+              
+              <li><a target="_blank" href="https://twitter.com/2Jews3Opinions">Twitter</a></li>
+              
+              
+              <li><a target="_blank" href="https://soundcloud.com/2Jews3Opinions">SoundCloud</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <main>
+        <div id="home">
   <ul class="posts">
-    {% for post in paginator.posts %}
+    
     <li itemscope itemtype="http://schema.org/BlogPosting">
-      <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+      <a href="/2014/01/05/perception-of-design/" itemprop="url">
         <div class="p-wrap">
           <article class="inner">
-            <time datetime="{{ post.date | date_to_xmlschema }}"
+            <time datetime="2014-01-05T16:57:51+00:00"
                 itemprop="datePublished">
-              {{ post.date | date_to_string }}
+              05 Jan 2014
             </time>
-            <p itemprop="name headline">{{ post.title }}</p>
-            {% soundcloud 256241332 %}
+            <p itemprop="name headline">Perception of design, a developer point of view</p>
+            <iframe width='100%' height='166' scrolling='no' frameborder='no' src='http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F256241332&show_artwork=true'></iframe>
           </article>
         </div>
       </a>
     </li>
-    {% endfor %}
+    
+    <li itemscope itemtype="http://schema.org/BlogPosting">
+      <a href="/2014/01/03/going-back-2013/" itemprop="url">
+        <div class="p-wrap">
+          <article class="inner">
+            <time datetime="2014-01-03T16:57:51+00:00"
+                itemprop="datePublished">
+              03 Jan 2014
+            </time>
+            <p itemprop="name headline">Going back on 2013; quite an incredible year</p>
+            <iframe width='100%' height='166' scrolling='no' frameborder='no' src='http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F256241332&show_artwork=true'></iframe>
+          </article>
+        </div>
+      </a>
+    </li>
+    
   </ul>
 </div>
 
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.next_page %}
-  <a href="{{ site.baseurl }}/page/{{paginator.next_page}}" class="older">previous</a>
-  {% else %}
-  <span class="next">previous</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a href="{{ site.baseurl }}/" class="newer">newer</a>
-    {% else %}
-    <a href="{{ site.baseurl }}/page/{{paginator.previous_page}}" class="newer">newer</a>
-    {% endif %}
-  {% else %}
-  <span class="previous">newer</span>
-  {% endif %}
-</div>
-{% endif %}
+
+
+      </main>
+
+      <footer>
+        <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; Yonatan Miller</small>
+      </footer>
+
+    </div>
+    
+
+    <script src="/js/main.js"></script>
+    
+    
+
+  </body>
+</html>
