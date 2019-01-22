@@ -6,6 +6,8 @@
 // License: MIT License http://opensource.org/licenses/MIT
 
 // Base
+$baseurl:"{{ site.baseurl }}";
+
 @import '../_scss/base/reset';
 @import '../_scss/base/variables';
 @import '../_scss/base/utilities';
